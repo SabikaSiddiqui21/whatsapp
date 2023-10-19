@@ -57,10 +57,30 @@ class ChatsPage extends StatelessWidget {
       children: <Widget>[
         ListTile(
           leading: CircleAvatar(
-            backgroundImage: AssetImage('assets/user1.jpg'),),
+            backgroundImage: AssetImage('assets/user1.jpg'),
+          ),
           title: Text('John Doe'),
           subtitle: Text('Hello there'),
           trailing: Text('2:30 PM'),
+          onTap: () {
+          },
+        ),
+        ListTile(
+          leading: CircleAvatar(
+            backgroundImage: AssetImage('assets/user2.jpg'),
+          ),
+          title: Text('Jane Smith'),
+          subtitle: Text('How are you doing?'),
+          trailing: Text('1:15 PM'),
+          onTap: () {
+          },
+        ),
+        ListTile(
+          leading: CircleAvatar(
+            backgroundImage: AssetImage('assets/user3.jpg'),),
+          title: Text('John lie'),
+          subtitle: Text('You there'),
+          trailing: Text('12:30 PM'),
           onTap: () {
           },
         ),
@@ -76,10 +96,19 @@ class StatusPage extends StatelessWidget {
       children: <Widget>[
         ListTile(
           leading: CircleAvatar(
-            backgroundImage: AssetImage('assets/user2.jpg'),
+            backgroundImage: AssetImage('assets/user1.jpg'),
           ),
           title: Text('Alice'),
           subtitle: Text('Tap to add status'),
+          onTap: () {
+          },
+        ),
+        ListTile(
+          leading: CircleAvatar(
+            backgroundImage: AssetImage('assets/user2.jpg'),
+          ),
+          title: Text('Eve'),
+          subtitle: Text('Feeling happy today!'),
           onTap: () {
           },
         ),
@@ -95,9 +124,20 @@ class CallsPage extends StatelessWidget {
       children: <Widget>[
         ListTile(
           leading: CircleAvatar(
-            backgroundImage: AssetImage('assets/user3.jpg'),),
+            backgroundImage: AssetImage('assets/user1.jpg'),
+          ),
           title: Text('Bob'),
           subtitle: Text('Yesterday, 4:45 PM'),
+          trailing: Icon(Icons.call),
+          onTap: () {
+          },
+        ),
+        ListTile(
+          leading: CircleAvatar(
+            backgroundImage: AssetImage('assets/user2.jpg'),
+          ),
+          title: Text('Grace'),
+          subtitle: Text('Last week, 9:30 AM'),
           trailing: Icon(Icons.call),
           onTap: () {
           },
@@ -106,3 +146,4 @@ class CallsPage extends StatelessWidget {
     );
   }
 }
+
